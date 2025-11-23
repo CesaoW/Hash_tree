@@ -313,11 +313,11 @@ python main.py -t linear -f data.csv -b 16
 - B+ Tree: Silberschatz, Korth, Sudarshan - "Database System Concepts"
 - Linear Hashing: Litwin, W. (1980) - "Linear Hashing: A New Tool for File and Table Addressing"
 
-## 👥 Autor
+## Autor
 
-[César Nogueira Rodrigues]
-[Instituto Federal de Minas Gerais - IFMG]
-[Banco de Dados - II]
+- César Nogueira Rodrigues
+- Instituto Federal de Minas Gerais - IFMG
+- Banco de Dados - II
 
 ---
 
