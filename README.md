@@ -2,12 +2,12 @@
 
 Implementação de **Árvore B+** e **Linear Hashing** para indexação de registros compostos por campos inteiros.
 
-## 📋 Requisitos
+##  Requisitos
 
 - Python 3.7 ou superior
 - Bibliotecas padrão Python (csv, logging, argparse)
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 projeto/
@@ -23,7 +23,7 @@ projeto/
     └── linear_hash.log
 ```
 
-## 🚀 Como Usar
+## Como Usar
 
 ### Instalação
 
@@ -107,7 +107,7 @@ operation,key,attr2,attr3,...
 - Primeiro campo após operação: **chave única** (A1)
 - Demais campos: atributos adicionais (A2, A3, ...)
 
-## 🔧 Gerando Dados de Teste com SIOgen
+## Gerando Dados de Teste com SIOgen
 
 ### Instalação do SIOgen
 
@@ -133,7 +133,7 @@ make
 ./siogen -a 10 -i 100000 -d 10000 -f data/dataset_100000.csv
 ```
 
-## 📊 Executando Experimentos
+## Executando Experimentos
 
 ### Script de Experimentos Automatizado
 
@@ -175,7 +175,7 @@ python main.py -t linear -f data/dataset.csv -b 8 -s
 python main.py -t linear -f data/dataset.csv -b 16 -s
 ```
 
-## 🎯 Operações Suportadas
+## Operações
 
 ### B-Tree
 - ✅ Inserção
@@ -187,8 +187,7 @@ python main.py -t linear -f data/dataset.csv -b 16 -s
 - ✅ Inserção
 - ✅ Remoção
 - ✅ Busca por igualdade
-- ❌ Busca por intervalo (não aplicável)
-
+- 
 ### Busca por Intervalo (B-Tree)
 
 ```bash
@@ -196,7 +195,7 @@ python main.py -t linear -f data/dataset.csv -b 16 -s
 python main.py -t btree -f data/dataset.csv --range 10 50
 ```
 
-## 📈 Estatísticas Coletadas
+## Estatísticas Coletadas
 
 ### B-Tree
 - Número de nós (internos e folhas)
@@ -215,7 +214,7 @@ python main.py -t btree -f data/dataset.csv --range 10 50
 - Fator de carga médio
 - Tempo de carregamento
 
-## 🧪 Exemplos de Uso Completo
+## Exemplos de Uso Completo
 
 ### Exemplo 1: Teste Básico com B-Tree
 
@@ -255,7 +254,7 @@ python main.py -t btree -f comparison.csv -p 512 -s
 python main.py -t linear -f comparison.csv -p 512 -b 4 -s
 ```
 
-## 🐛 Debug e Logs
+## Debug e Logs
 
 ### Ativar Modo Debug
 
@@ -282,7 +281,7 @@ grep "ERROR" btree.log
 grep "Inserting" linear_hash.log
 ```
 
-## ❓ Solução de Problemas
+## Solução de Problemas
 
 ### Erro: "Page size must be at least 256 bytes"
 ```bash
@@ -308,23 +307,18 @@ python main.py -t btree -f data.csv -p 1024
 python main.py -t linear -f data.csv -b 16
 ```
 
-## 📚 Referências
+## Referências
 
 - SIOgen: https://ribeiromarcos.github.io/siogen/
 - B+ Tree: Silberschatz, Korth, Sudarshan - "Database System Concepts"
 - Linear Hashing: Litwin, W. (1980) - "Linear Hashing: A New Tool for File and Table Addressing"
 
-## 👥 Autores
+## 👥 Autor
 
-[Seu Nome]
-[Sua Instituição]
-[Disciplina]
-
-## 📝 Licença
-
-Este projeto foi desenvolvido para fins acadêmicos.
+[César Nogueira Rodrigues]
+[Instituto Federal de Minas Gerais - IFMG]
+[Banco de Dados - II]
 
 ---
 
-**Data de criação:** Novembro 2025  
-**Versão:** 1.0
+**23** Novembro 2025  
