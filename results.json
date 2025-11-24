@@ -1,0 +1,34 @@
+{
+  "registros": [1500],
+  "btree": [4.54],
+  "linear_hash": [5.35],
+  "page_size": 512,
+  "date": "2024-11-23",
+  "btree_stats": {
+    "height": 4,
+    "num_nodes": 343,
+    "num_leaf_nodes": 289,
+    "num_records": 754,
+    "warning": "Apenas 754 de 1500 registros foram armazenados!"
+  },
+  "linear_hash_stats": {
+    "num_buckets": 324,
+    "num_records": 1500,
+    "level": 6,
+    "next_split": 68,
+    "num_splits": 320,
+    "overflow_pages": 274,
+    "buckets_with_overflow": 221,
+    "avg_records_per_bucket": 4.63,
+    "total_pages": 598
+  },
+  "analysis": {
+    "btree_records_missing": 746,
+    "btree_ms_per_record": 6.02,
+    "linear_hash_ms_per_record": 3.57,
+    "linear_hash_speedup_per_record": 1.69,
+    "linear_hash_space_overhead_percent": 74,
+    "linear_hash_overflow_rate_percent": 68.2
+  },
+  "notes": "Teste com 1500 registros. B-Tree com problema de integridade (só inseriu 50% dos dados)."
+}
